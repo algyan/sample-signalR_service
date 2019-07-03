@@ -14,7 +14,7 @@ namespace ReceiveEHMtoSendSR
     {
         [FunctionName("Receive")]
         public static async Task Run(
-            [EventHubTrigger("datasource", Connection = "receiverConnectionString")] EventData[] events,
+            [EventHubTrigger("datasource", Connection = "EventHubConnectionString")] EventData[] events,
             [SignalR(HubName = "DataShare", ConnectionStringSetting = "SignalRConnectionString")]IAsyncCollector<SignalRMessage> signalRMessages, 
             ILogger log)
         {
