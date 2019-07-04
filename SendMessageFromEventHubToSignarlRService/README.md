@@ -5,7 +5,9 @@
   * Event Hub接続文字列とSignalR Service接続文字列をlocal.setting.jsonに記入する。（下表参照）
 * クラウドで動かすときは、
   * デプロイした Azure Functions の Web Socket をオンにする。
+    * Function AppのConfiguration > General settingsにある、Web socketsをOn
   * Azure Functions の 概要→Function Appの設定→アプリケーション設定の管理で、+新しいアプリケーション設定をクリックして、Event Hub と SignalR Service の接続文字列を登録する。（下表参照）
+    * Function AppのConfiguration > Application settingsに、Event HubとSignalR Service の接続文字列を登録
 
 |項目|変数名|解説|
 |:--|:--|:--|
