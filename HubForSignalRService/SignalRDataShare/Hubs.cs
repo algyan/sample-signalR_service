@@ -16,7 +16,7 @@ namespace SignalRDataShare
         [FunctionName("SignalRInfo")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous)] HttpRequest req,
-            [SignalRConnectionInfo(HubName = "DataShare")] SignalRConnectionInfo connectionInfo,
+            [SignalRConnectionInfo(HubName = "DataShare", ConnectionStringSetting = "AzureSignalRConnectionString")] SignalRConnectionInfo connectionInfo,
             ILogger log)
         {
             log.LogInformation("Invoked negotiate");

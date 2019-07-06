@@ -14,8 +14,8 @@ namespace ReceiveEHMtoSendSR
     {
         [FunctionName("Receive")]
         public static async Task Run(
-            [EventHubTrigger("datasource", Connection = "EventHubConnectionString")] EventData[] events,
-            [SignalR(HubName = "DataShare", ConnectionStringSetting = "SignalRConnectionString")]IAsyncCollector<SignalRMessage> signalRMessages, 
+            [EventHubTrigger("datasource", Connection = "AzureEventHubConnectionString")] EventData[] events,
+            [SignalR(HubName = "DataShare", ConnectionStringSetting = "AzureSignalRConnectionString")]IAsyncCollector<SignalRMessage> signalRMessages, 
             ILogger log)
         {
             log.LogInformation("Invoked Receive with {0} messages", events.Length);
