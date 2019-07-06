@@ -8,7 +8,8 @@ Event Hub（IoT Hubでも可）が受信したデータを、Event Hub Trigger �
 - Azure Subscription (無料お試しでも可) 
 - Visual Studio 2017 以上 
 ## 手順 
-1. SignalR Service を作成する - 作り方は、[Azure SignalR リソースを作成](https://docs.microsoft.com/ja-jp/azure/azure-signalr/signalr-quickstart-dotnet-core#create-an-azure-signalr-resource)を参照 
+1. SignalR Service を作成する - 作り方は、[Azure SignalR リソースを作成](https://docs.microsoft.com/ja-jp/azure/azure-signalr/signalr-quickstart-dotnet-core#create-an-azure-signalr-resource)を参照  
+**SignalR ServiceのServiceModeは、Serverlessにしてください。**
 2. Event Hub を作成する - 作り方は、[こちら](https://docs.microsoft.com/ja-jp/azure/event-hubs/event-hubs-create)を参照 ※ Event Hub の名前は、datasource とする。 
 3. Func1を作成 - [SendMessageFromEventHubToSignarlRService](SendMessageFromEventHubToSignarlRService) を参照 
 4. Func2を作成 - [HubForSignalRService](HubForSignalRService)を参照 
