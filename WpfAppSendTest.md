@@ -12,5 +12,5 @@ MainWindow.xaml.cs の41行目、
 実行して、ボタンをクリック。 
 
 <video width="320" height="240" controls>
-  <source src="SampleViewer.mp4" type="video/mp4">
+  <source src="media/SampleViewer.mp4" type="video/mp4">
 </video>
