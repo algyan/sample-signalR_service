@@ -1,6 +1,6 @@
 # Hub というか、accessToken を供給する Functions
 
-* Visual Studioで、SignalRDataShare/SignalRDataShare.slnを開く。
+* Visual Studioで、HubForSignalRService/HubForSignalRService.slnを開く。
 * ローカルデバッグしたいときには、local.setting.json の Event Hub と、 SignalR Service の接続文字列を、Azure Portal からコピペする。
 * Visual Studio で、Azure にデプロイする。
 * デプロイした Azure Functions の Web Socket をオンにする。

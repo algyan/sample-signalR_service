@@ -8,9 +8,9 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.SignalRService;
 using Microsoft.Extensions.Logging;
 
-namespace ReceiveEHMtoSendSR
+namespace ReceiveEventHubToSignalRService
 {
-    public static class ReceiveEHMtoSendSR
+    public static class ReceiveEventHubToSignalRService
     {
         [FunctionName("Receive")]
         public static async Task Run(

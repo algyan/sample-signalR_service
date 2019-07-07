@@ -1,6 +1,6 @@
 # Event Hub からメッセージを受信して、SignalR Serviceに送る 
 
-* Visual Studioで、ReceiveEHMtoSendSR/ReceiveEHMtoSendSR.slnを開く。
+* Visual Studioで、ReceiveEventHubToSignalRService/ReceiveEventHubToSignalRService.slnを開く。
 * ローカルで動かすときは、
   * Event Hub接続文字列とSignalR Service接続文字列をlocal.setting.jsonに記入する。（下表参照）
 * クラウドで動かすときは、

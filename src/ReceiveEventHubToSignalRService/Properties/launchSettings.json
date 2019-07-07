@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ReceiveEHMtoSendSR": {
+    "ReceiveEventHubToSignalRService": {
       "commandName": "Project",
       "commandLineArgs": "host start --pause-on-error"
     }

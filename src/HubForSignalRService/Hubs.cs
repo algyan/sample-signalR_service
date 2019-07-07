@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace SignalRDataShare
+namespace HubForSignalRService
 {
     public static class Hubs
     {
